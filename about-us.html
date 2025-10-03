@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Action Against Hunger</title>
+
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(218, 210, 210, 0.859);
+            padding: 10px;
+        }
+
+        header img {
+            width: 80px;
+
+        }
+
+        .first ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .first ul li a {
+            color: olive;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+         .first ul li:hover>.dropdown {
+            display: block;
+
+        } 
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #eff5fb;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+
+        .dropdown li {
+            display: block;
+        }
+
+        .dropdown li a {
+            color: rgb(100, 160, 225);
+            padding: 10px 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        main {
+            min-width: auto;
+            height: 250px;
+            display: flex;
+            padding: 20px;
+        }
+
+
+        main h1 {
+            font-size: 5rem;
+            font-weight: bolder;
+            margin-left: 200px;
+            margin-top: 100px;
+            color: darkgoldenrod;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        main img {
+            width: 400px;
+            height: 300px;
+            padding: 40px;
+            display: inline-flex;
+            flex: 0.8;
+
+        }
+
+         #about {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .section {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+
+        #about {
+            background-color: #e9ecef;
+            padding: 60px;
+            margin-top: 100px;
+
+        }
+
+        #about h2 {
+            font-size: 3rem;
+            color: rgb(152, 79, 94);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        }
+
+        #about p {
+            font-size: 1.6rem;
+            padding: 10px;
+            line-height: 1.5;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: midnightblue;
+        }
+
+
+        #mission {
+
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #e0e9f3;
+        }
+
+        #mission h2 {
+            font-size: 3rem;
+            color: maroon;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        }
+
+        #mission p {
+            font-size: 1.5rem;
+            padding: 20px;
+            line-height: 1.6;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: midnightblue;
+            margin: 15px;
+        }
+
+        #mission img {
+            width: 300px;
+            height: 250px;
+            border-radius: 10px;
+            float: right;
+        }
+
+        #work {
+            background-color: #e9ecef;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+
+
+        }
+
+        #work h2 {
+            text-align: center;
+            color: darkolivegreen;
+            font-size: 3.5rem;
+            padding: 20px;
+
+        }
+
+        #work ul {
+            padding: 20px;
+            margin: 20px;
+
+        }
+
+        #work li {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: midnightblue;
+            font-size: 1.5rem;
+        }
+
+        #work img {
+            width: 200px;
+            height: 250px;
+            border-radius: 50px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+
+
+
+        }
+
+        .footer1 {
+            display: flex;
+            justify-content: space-around;
+            max-width: 100%;
+            margin: auto;
+            height: 300px;
+
+        }
+
+        .section1 {
+            padding: 5px;
+            display: inline-block;
+        }
+
+        .section1 h4 {
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+
+        }
+
+        .section1 p {
+            font-size: 1.5rem;
+            color: #36b2d1;
+        }
+
+
+        .section1 ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.5rem;
+            color: #36b2d1;
+        }
+
+        .section1 ul li a {
+            color: #36b2d1;
+            text-decoration: none;
+
+        }
+    </style>
+    </head>
+    <body>
+
+    <header>
+        <img src="/logo.jpeg" alt="logo">
+        <div class="first">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li>
+                    <a href="about-us.html">About Us</a>
+                    <ul class="dropdown">
+                        <li><a href="impact.html">Impact</a></li>
+                        <li><a href="our approach.html">Our Approach</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="our work.html">Our work</a>
+                </li>
+
+               
+                <li><a href="contact us.html">contact us</a>
+                <li><a href="donation.html">Donate</a>
+                <li><a href="login.html">login</a></li>
+
+            </ul>
+        </div>
+
+
+    </header>
+
+    <main>
+        <h1>Real Work Real Change</h1>
+        <img src="/hungry1.jpg" alt="hunger">
+    </main>
+    <div class=" section">
+        <section id="about">
+            <h2>We save lives and build resilient communities</h2>
+            <p> At "HOPE IN EVERY MEAL", we are committed to creating a world
+                free from malnutrition in all its forms. Malnutrition is a pressing
+                global challenge that affects millions of lives, particularly children, women, and vulnerable
+                communities.
+                It manifests as undernutrition, including wasting, stunting, and micronutrient deficiencies,
+                as well as overnutrition, such as obesity and diet-related diseases.
+                These conditions not only threates health
+                but also hinder education, productivity, and economic growth.
+        </section>
+
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <img src="/image5.jpg" alt="img">
+            <p>Is to combat malnutrition by providing sustainable
+                solutions that address its root causes—poverty,
+                lack of access to nutritious food, inadequate healthcare,
+                and poor awareness. Guided by the Sustainable Development Goals (SDGs) and the UN Decade
+                of Action on Nutrition (2016–2025),
+                we work tirelessly to ensure that every individual
+                has access to adequate nutrition for a healthy and fulfilling life.</p>
+        </section>
+
+        <section id="work">
+            <h2>What We Do</h2>
+            <img src="/hungry1.jpg" alt="hunger">
+            <img src="/hungry2.jpg" alt="hunger">
+            <img src="/image8.jpg" alt="hunger">
+            <img src="/iamge9.jpg" alt="hunger">
+            <img src="/image10.jpg" alt="hunger">
+
+
+            <ul>
+                <li>Community Outreach: Educating families about balanced diets and proper nutrition practices.
+
+                    .</li>
+                <li>Nutrition Programs: Distributing fortified foods and supplements to at-risk populations.</li>
+                <li>Advocacy: Partnering with governments and organizations to influence policies that prioritize
+                    nutrition.</li>
+                <li>Research & Innovation: Developing evidence-based interventions to tackle malnutrition effectively.
+                </li>
+                <li>hope in every mean foundatation reaches 21 million people a year across more than 55 countries.</li>
+
+            </ul>
+
+        </section>
+    </div>
+    <footer>
+        <div class="footer1">
+            <div class="section1">
+                <img src="/logo.jpeg" width="150px" alt="logo">
+                <h4></h4>
+                <p>HOPE IN EVERY MEAL is a dedicated to promote child welfare and with financial transparency.</p>
+            </div>
+            <div class="section1">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about-us.html">about-us</a></li>
+                    <li><a href="our-work.html">our-work</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="donation.html">Donation</a></li>
+                </ul>
+            </div>
+            <div class="section1">
+                <h4>Contact Us</h4>
+                <p>Email:xyz@gmail.com</p>
+                <p>Phone:+91 0123456789</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

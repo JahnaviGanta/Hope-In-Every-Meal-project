@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donate</title>
+    <style>
+          *{
+        padding:0;
+        margin:0;
+    }
+    header {
+      display:flex;
+      justify-content: space-between;
+      background-color: rgba(218, 210, 210, 0.859);
+      padding:10px;
+    }
+
+    header img{
+      width:80px;
+    
+    }
+
+
+    .first ul li {
+      display: inline-block;
+      position: relative;
+    }
+
+    .first ul li a {
+      color:olive;
+      text-decoration: none;
+      font-size:1.5rem;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+
+    .first ul li:hover > .dropdown {
+      display: block;
+    
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #eff5fb;
+      padding: 10px 0;
+      border-radius: 5px;
+    }
+
+    .dropdown li {
+      display:block ;
+    }
+    
+    .dropdown li a {
+      color:rgb(100, 160, 225);
+      padding: 10px 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+     .container {
+       width: 500px;
+       margin: 50px auto;
+       background: #f8f9fa;
+       padding: 30px;
+       border-radius: 10px;
+       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+     }
+
+     .container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .amount-options {
+        margin-top: 10px;
+    }
+
+    .amount-options button {
+            margin: 5px 5px 0 0;
+            padding: 10px 15px;
+            border: none;
+            background-color: #016795;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+    }
+
+     .amount-options button.active {
+            background-color:#016795;
+    }
+
+    .submit-btn {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #155387;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+    }
+    footer {
+            background-color: #333;
+            color: #fff;
+    }
+
+    .footer1 {
+            display: flex;
+            justify-content: space-around;
+            max-width: 100%;
+            margin: auto;
+            height: 300px;
+
+    }
+
+    .section1 {
+            padding: 5px;
+            display: inline-block;
+    }
+
+    .section1 h4 {
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+
+     }
+
+    .section1 p {
+            font-size: 1.5rem;
+            color: #36b2d1;
+    }
+
+
+     .section1 ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.5rem;
+            color: #36b2d1;
+    }
+
+    .section1 ul li a {
+            color: #36b2d1;
+            text-decoration: none;
+
+    }
+    </style>
+</head>
+<body>
+    <header> 
+        <img src="/logo.jpeg" alt="logo">
+<div class="first">
+        <ul>
+                <li><a href="main.html">Home</a></li>
+                <li>
+                    <a href="about-us.html">About Us</a>
+                    <ul class="dropdown">
+                        <li><a href="impact.html">Impact</a></li>
+                        <li><a href="our approach.html">Our Approach</a></li>
+                    </ul>
+                </li>
+                 <li>
+                    <a href="our work.html">Our work</a>
+                 </li>
+                
+                
+                <li><a href="contact us.html" >contact us</a>
+                <li><a href="donation.html">Donate</a>
+                <li><a href="login.html">login</a></li>
+                
+        </ul>
+</div>
+        
+        
+</header>
+
+
+<div class="container">
+    <h2>Make a Donation</h2>
+
+    
+    <form id="donationForm" method="post" action="donate.jsp">
+        <label for="donationAmount">Choose Amount</label>
+        <div class="amount-options">
+            <button type="button" onclick="setAmount(10)">$10</button>
+            <button type="button" onclick="setAmount(25)">$25</button>
+            <button type="button" onclick="setAmount(50)">$50</button>
+            <button type="button" onclick="setAmount(100)">$100</button>
+            <button type="button" onclick="setAmount(250)">$250</button>
+            <button type="button" onclick="setAmount(500)">$500</button>
+        </div>
+        <div class="in">
+
+        <label for="donationAmount">Donation Amount</label>
+        <input type="number" id="donationAmount" name="amount" step="1" required placeholder="e.g. 75" />
+
+        <label for="name">Donor Name</label>
+        <input type="text" id="name" name="donorName" required placeholder="Your Name" />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="youremail@example.com" />
+
+        <label for="message">Message (optional)</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message..."></textarea>
+
+        <button type="submit" class="submit-btn">Donate Now</button>
+        </div>
+    </form>
+</div>
+<footer>
+        <div class="footer1">
+            <div class="section1">
+                <img src="/logo.jpeg" width="150px" alt="logo">
+                <h4></h4>
+                <p>HOPE IN EVERY MEAL is a dedicated to promote child welfare and with financial transparency.</p>
+            </div>
+            <div class="section1">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about-us.html">about-us</a></li>
+                    <li><a href="our-work.html">our-work</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="donation.html">Donation</a></li>
+                </ul>
+            </div>
+            <div class="section1">
+                <h4>Contact Us</h4>
+                <p>Email:xyz@gmail.com</p>
+                <p>Phone:+91 0123456789</p>
+            </div>
+        </div>
+
+    </footer>
+
+<script>
+    function setAmount(value) {
+        document.getElementById('donationAmount').value = value;
+
+        // highlight active button
+        const buttons = document.querySelectorAll('.amount-options button');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+    }
+
+    document.getElementById('donationForm').addEventListener('submit', function (e) {
+        // OPTIONAL: client-side alert
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const amount = document.getElementById("donationAmount").value;
+
+        if (!amount || amount < 1) {
+            alert("Please enter a valid donation amount.");
+            e.preventDefault(); // prevent form submit
+            return;
+        }
+
+        // Comment this line out if using JSP to handle server confirmation
+        // alert(`Thank you, ${name}, for your generous donation of ₹${amount}! A confirmation has been sent to ${email}.`);
+    });
+</script>
+
+</body>
+</html>

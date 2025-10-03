@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Work | Child Malnutrition NGO</title>
+  <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(218, 210, 210, 0.859);
+            padding: 10px;
+        }
+
+        header img {
+            width: 80px;
+
+        }
+
+        .first ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .first ul li a {
+            color: olive;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+         .first ul li:hover>.dropdown {
+            display: block;
+
+        } 
+      
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #eff5fb;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+
+        .dropdown li {
+            display: block;
+        }
+
+        .dropdown li a {
+            color: rgb(100, 160, 225);
+            padding: 10px 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+    .a {
+      background: aliceblue;
+      color: midnightblue;
+      padding: 40px 20px;
+      text-align: center;
+      background-image: url("/our work.jpg");
+      background-repeat: no-repeat;
+      background-size:cover;
+      width:100%;
+      height:400px;
+    
+    }
+    .a h1 {
+      margin: 0;
+      font-size: 5rem;
+    }
+    .a p {
+      margin-top: 10px;
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+    main {
+      max-width: 1100px;
+      margin: 40px auto 60px;
+      padding: 0 20px;
+    }
+    section {
+      background: white;
+      border-radius: 8px;
+      padding: 30px 35px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3b75;
+      padding-left: 12px;
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    h3 {
+      color: #bf360c;
+      margin-top: 0;
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #593613;
+      padding-bottom: 6px;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #4e342e;
+      margin-bottom: 15px;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    .program-category {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: space-between;
+    }
+    .program-card {
+      background: aliceblue;
+      border-left: 6px solid #779be4;
+      border-radius: 8px;
+      padding: 20px 25px;
+      flex: 1 1 45%;
+      box-shadow: inset 3px 3px 6px rgba(251, 140, 0, 0.1);
+    }
+    .program-card h4 {
+      margin-top: 0;
+      color: #764b20;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    .success-story {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #297198;
+    }
+    .success-story:last-child {
+      border-bottom: none;
+    }
+    .success-story h4 {
+      margin: 0 0 8px 0;
+      color: #764b20;
+      font-size: 1.3rem;
+    }
+    .success-story p {
+      margin: 0;
+      color: #5d4037;
+    }
+    .media-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 25px;
+    }
+    .gallery img{
+      width: 300px;
+      height:250px;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+
+    }
+    
+    footer {
+     background-color: #333;
+      color: #fff;
+    }
+     .footer1{
+       display: flex;
+       justify-content: space-around;
+       max-width:100%;
+       margin: auto;
+       height:300px;
+  
+    }
+    .section1 {
+     padding:5px;
+     display:inline-block;
+   }
+
+    .section1 h4 {
+      margin-bottom: 10px;
+     font-size: 1.6rem;
+
+    }
+    .section1 p{
+    font-size:1.5rem;
+    color: #36b2d1;
+    }
+
+
+    .section1 ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.5rem;
+    color:#36b2d1 ;
+    }
+
+    .section1 ul li a {
+    color: #36b2d1;
+    text-decoration: none;
+
+    }
+
+    
+  </style>
+</head>
+<body>
+  <header>
+        <img src="/logo.jpeg" alt="logo">
+        <div class="first">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li>
+                    <a href="about-us.html">About Us</a>
+                    <ul class="dropdown">
+                        <li><a href="impact.html">Impact</a></li>
+                        <li><a href="our approach.html">Our Approach</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="our work.html">Our work</a>
+                </li>
+
+                
+                <li><a href="contact us.html">contact us</a>
+                <li><a href="donation.html">Donate</a>
+                <li><a href="login.html">login</a></li>
+
+            </ul>
+        </div>
+
+
+    </header>
+  
+
+<div class="a">
+    
+  <h1>Our Work</h1>
+  <p>Committed to fighting child malnutrition through impactful programs and community engagement</p>
+</div>
+
+<main>
+
+ 
+  <section id="core-programs">
+    <h2 id="core-programs">Overview of Core Programs</h2>
+    <p>
+      Our NGO focuses on comprehensive programs designed to prevent, treat, and sustainably reduce child malnutrition. These programs combine nutrition education, healthcare support, community empowerment, and advocacy to create lasting change.
+    </p>
+  </section>
+
+  
+  <section id="program-categories">
+    <h2 id="program-categories">Program Categories</h2>
+    <div class="program-category">
+      <div class="program-card"  id="prevention-title">
+        <h4 id="prevention-title">Nutrition Prevention</h4>
+        <p>Community workshops on breastfeeding, balanced diets, hygiene, and kitchen gardening to prevent malnutrition before it starts.</p>
+      </div>
+      <div class="program-card"  id="treatment-title">
+        <h4 id="treatment-title">Treatment & Care</h4>
+        <p>Therapeutic feeding, medical care, and micronutrient supplementation for children suffering from moderate to severe malnutrition.</p>
+      </div>
+      <div class="program-card" id="capacity-title">
+        <h4 id="capacity-title">Capacity Building</h4>
+        <p>Training local health workers and volunteers to sustain nutrition programs and empower families with knowledge and skills.</p>
+      </div>
+      <div class="program-card"  id="advocacy-title">
+        <h4 id="advocacy-title">Advocacy & Policy</h4>
+        <p>Engaging policymakers and stakeholders to improve nutrition policies and resource allocation for vulnerable communities.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="success-stories">
+    <h2 id="success-stories">Project Highlights & Success Stories</h2>
+
+    <article class="success-story"  id="story1-title">
+      <h4 id="story1-title">Hamdi Ali’s Recovery</h4>
+      <p>Hamdi was found severely malnourished in an IDP camp. With therapeutic food and medical care, she regained strength quickly. Community volunteers supported her grandmother to maintain her health.</p>
+    </article>
+
+    <article class="success-story"  id="story2-title">
+      <h4 id="story2-title">Ravi’s Transformation</h4>
+      <p>Ravi, a frail toddler, gained weight and vitality after joining our Nutri-Kitchen program. His mother now actively educates other families on nutrition and hygiene.</p>
+    </article>
+
+    <article class="success-story"  id="story3-title">
+      <h4 id="story3-title">Meera’s Garden of Life</h4>
+      <p>Meera and women in her village learned to grow nutrient-rich vegetables, improving diets and generating income through sustainable gardening.</p>
+    </article>
+
+    <article class="success-story"  id="story4-title">
+      <h4 id="story4-title">Fatima’s Fight Against Illness</h4>
+      <p>Fatima overcame severe malnutrition and illness with supplements and hygiene education. Her recovery inspired her community to adopt healthier practices.</p>
+    </article>
+  </section>
+
+
+  <section class="media-field">
+    <h2 id="media-field">Videos & Photos from the Field</h2>
+    <div class="gallery">
+      <img src="/volutnerrs.jpg" alt="Children receiving nutritious meals at community kitchen" />
+      <img src="/treatment.jpg" alt="Health worker educating mothers on nutrition" />
+      <img src="/hungry2.jpg" alt="daily meals">
+    </div>
+  </section>
+
+</main>
+<footer>
+        <div class="footer1">
+            <div class="section1">
+                <img src="/logo.jpeg" width="150px" alt="logo">
+                <h4></h4>
+                <p>HOPE IN EVERY MEAL is a dedicated to promote child welfare and with financial transparency.</p>
+            </div>
+            <div class="section1">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about-us.html">about-us</a></li>
+                    <li><a href="our-work.html">our-work</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="donation.html">Donation</a></li>
+                </ul>
+            </div>
+            <div class="section1">
+                <h4>Contact Us</h4>
+                <p>Email:xyz@gmail.com</p>
+                <p>Phone:+91 0123456789</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
