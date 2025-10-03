@@ -20,5 +20,13 @@ This is a website for a Non-Governmental Organization (NGO) designed to raise aw
 
 Screenshots
 
+#Homepage
+
+<img width="1470" height="956" alt="Image" src="https://github.com/user-attachments/assets/ca80a519-66ca-408d-993a-e34ec2cf79b4" />
+<img width="1470" height="956" alt="Image" src="https://github.com/user-attachments/assets/88373972-8d6c-425b-9775-0e51bf316fd7" />
+
+#Aboutus
+
+
 
 
