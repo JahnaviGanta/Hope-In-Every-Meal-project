@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(218, 210, 210, 0.996);
+            padding: 10px;
+        }
+
+        header img {
+            width: 80px;
+
+        }
+
+      
+        .first ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .first ul li a {
+            color: olive;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+         .first ul li:hover>.dropdown {
+            display: block;
+
+        } 
+     
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #eff5fb;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+
+        .dropdown li {
+            display: block;
+        }
+
+        .dropdown li a {
+            color: rgb(100, 160, 225);
+            padding: 10px 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        .contact{
+            display: block;
+        }
+
+        h1 {
+            background-image: url(https://i.pinimg.com/474x/0b/8c/40/0b8c4014410de79df99d2ac8bd9a0a02.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 400px;
+            width: 500px;
+            display: flex;
+        }
+
+
+        h2 {
+            color: rgb(198, 15, 27);
+            text-align: left;
+            font-size: 3rem;
+            font-weight: 600;
+            padding: 50px;
+
+        }
+
+       h4 {
+            font-size: 2rem;
+             padding: 0 40px; 
+        }
+
+         p, ul {
+            font-size: 1.5rem;
+            padding: 0 40px 20px; 
+        }
+
+        ul li {
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            margin: 30px auto;
+            margin-bottom: ;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+         .form1 {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+        } 
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        
+
+        button {
+            background-color: #3d86ba;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer; 
+            margin-top:5px;
+           
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #d8c3c3;
+        }
+
+        .footer1 {
+            display: flex;
+            justify-content: space-around;
+            max-width: 100%;
+            margin: auto;
+            height: 300px;
+
+        }
+
+        .section1 {
+            padding: 5px;
+            display: inline-block;
+        }
+
+        .section1 h4 {
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+
+        }
+
+        .section1 p {
+            font-size: 1.5rem;
+            color: #36b2d1;
+        }
+
+
+        .section1 ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.5rem;
+            color: #36b2d1;
+        }
+
+        .section1 ul li a {
+            color: #36b2d1;
+            text-decoration: none;
+
+        }
+        .error-message {
+       color: red;
+       font-size: 14px;
+    }
+    </style>
+    <head>
+        <body>
+    <header>
+        <img src="/logo.jpeg" alt="logo">
+        <div class="first">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li>
+                    <a href="about-us.html">About Us</a>
+                    <ul class="dropdown">
+                        <li><a href="impact.html">Impact</a></li>
+                        <li><a href="our approach.html">Our Approach</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="our work.html">Our work</a>
+                </li>
+
+                
+                <li><a href="contact us.html">contact us</a>
+                 <li><a href="donation.html">Donate</a>
+                <li><a href="login.html">login</a></li>
+
+            </ul>
+        </div>
+
+
+    </header>
+     <main>
+        <h2>For Corporate Partnerships</h2>
+        <ul>
+            <li>Jahnavi - 9266740073</li>
+            <li>hope@hopeineverymeal.org</li>
+        </ul>
+
+        <h2>Donation Related Queries</h2>
+        <ul>
+            <li>Abhi - 7042128777</li>
+            <li>donation@hiem.org</li>
+        </ul>
+
+        <h2>For All General Queries</h2>
+        <ul>
+            <li>info@hopeineverymeal.org</li>
+        </ul>
+
+        <h2>Helpdesk</h2>
+        <p>For any grievance, suggestions, or queries kindly write to us.</p>
+
+            <form name="RegForm" onsubmit="return validateForm()">
+            <div class="form1">
+  
+
+
+            <p>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" >
+                <span id="name-error" class="error-message"></span>
+                </p>
+                <p>
+           
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" >
+                <span id="phone-error" class="error-message"></span>
+                </p>
+                <p>
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" >
+                <span id="email-error" class="error-message"></span>
+                </p>
+                <p>
+               <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" ></textarea>
+                <span id="message-error" class="error-message"></span>
+                </p>
+                <p>
+                <button type="submit">Submit</button>
+                </p>
+        </form>
+
+     </main>
+
+    <footer>
+        <div class="footer1">
+            <div class="section1">
+                <img src="/logo.jpeg" width="150px" alt="logo">
+                <h4></h4>
+                <p>HOPE IN EVERY MEAL is a dedicated to promote child welfare and with financial transparency.</p>
+            </div>
+            <div class="section1">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about-us.html">about-us</a></li>
+                    <li><a href="our-work.html">our-work</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="donation.html">Donation</a></li>
+                </ul>
+            </div>
+            <div class="section1">
+                <h4>Contact Us</h4>
+                <p>Email:xyz@gmail.com</p>
+                <p>Phone:+91 0123456789</p>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+function validateForm() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const nameError = document.getElementById("name-error");
+    const emailError = document.getElementById("email-error");
+    const phoneError = document.getElementById("phone-error");
+    const messageError = document.getElementById("message-error");
+
+  
+    nameError.textContent = "";
+    emailError.textContent = "";
+    phoneError.textContent = "";
+    messageError.textContent = "";
+
+    let isValid = true;
+
+   
+    if (name === "" || /\d/.test(name)) {
+        nameError.textContent = "Please enter your name properly (no numbers).";
+        isValid = false;
+    }
+
+    if (email === "" || !email.includes("@")) {
+        emailError.textContent = "Please enter a valid email address.";
+        isValid = false;
+      }
+
+
+   
+    if (!/^\d{10}$/.test(phone)) {
+        phoneError.textContent = "Please enter a 10-digit phone number.";
+        isValid = false;
+    }
+
+    
+    if (message === "" || message.length < 5) {
+        messageError.textContent = "Please enter a message with at least 5 characters.";
+        isValid = false;
+    }
+
+    return isValid;
+}
+</script>
+
+</body>
+</html>
